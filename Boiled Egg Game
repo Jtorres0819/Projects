@@ -1,0 +1,27 @@
+integer  raw
+integer  boil
+integer  min
+integer  max
+integer  boiled_eggs
+integer  i
+integer  random_num
+min = 0
+max = 1
+Put "Enter your guess of the number of hard boiled eggs in a basket of a dozen: " to output
+boiled_eggs = Get next input
+for i = 0; i <= 11; i = i + 1
+   random_num = RandomNumber(0, 1)
+   if random_num==0
+      raw=0
+      boil=boil
+   else
+      boil=boil+1
+
+
+Put "\nNumber of hard boiled eggs generated randomly is: " to output 
+Put boil to output 
+ 
+if (boiled_eggs==boil)
+   Put "\nUser has won the Cracked Egg Game" to output 
+else
+   Put "\nUser has lost the Cracked Egg Game" to output 
